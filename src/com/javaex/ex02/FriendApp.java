@@ -12,11 +12,7 @@ public class FriendApp {
     	
     	System.out.println("친구 3명 등록해 주세요.");
     	for (int i = 0; i < 3; i++) {
-    		String name = sc.next();
-    		String hp = sc.next();
-    		String school = sc.next();
-    		
-    		fList.add(new Friend(name, hp, school));
+    		fList.add(new Friend(sc.next(), sc.next(), sc.next()));
     	}
     	
     	for (Friend f: fList) {
